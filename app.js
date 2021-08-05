@@ -47,7 +47,7 @@ ctrlApp.get('/powerup', (req,res) => {
   res.contentType('application/json') ;
   if (!mockPowerOn) {
         mockServer  = mockApp.listen(mockPort, () => console.log("Mock application running on port: " + mockPort));
-        tlsMockSvr  =  https.createServer(tlsOptions, mockApp ).listen( mockTlsPort, () => console.log("Mock Interface listening on TLS port: " + mockTlsPort) );
+        //tlsMockSvr  =  https.createServer(tlsOptions, mockApp ).listen( mockTlsPort, () => console.log("Mock Interface listening on TLS port: " + mockTlsPort) );
         mockPowerOn = true;
         res.send('["powering up"]');
     } 
@@ -63,7 +63,7 @@ ctrlApp.get('/powerdown', (req, res) => {
     if ( mockPowerOn ) {
         mockServer.close();        
         
-        tlsMockSvr.close();
+        //tlsMockSvr.close();
 
         mockPowerOn = false;
         res.send('["powering down"]');
@@ -375,7 +375,7 @@ mockServer  = mockApp.listen( mockPort, () => console.log("Mock Interface listen
 mockPowerOn = true;
 
 
-tlsMockSvr = https.createServer(tlsOptions, mockApp ).listen( mockTlsPort, () => console.log("Mock Interface listening on TLS port: " + mockTlsPort) );
+//tlsMockSvr = https.createServer(tlsOptions, mockApp ).listen( mockTlsPort, () => console.log("Mock Interface listening on TLS port: " + mockTlsPort) );
 
 
 function logIncomingRequest(req) { 
