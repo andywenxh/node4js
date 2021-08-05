@@ -1,0 +1,34 @@
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="4d2d5176-b076-409c-9e2a-bd3e641179f7"/>
+   <meta>
+      <lastUpdated value="2020-11-24T09:40:00.448-05:00"/>
+   </meta>
+   <language value="en"/>
+   <type value="searchset"/>
+   <total value="0"/>
+   <link>
+      <relation value="self"/>
+      <url value="https://wsgateway.prod.ehealthontario.ca/API/FHIR/Medications/v1/MedicationDispense?patient:patient.identifier=ca-on-patient-hcn%7C9999999999&amp;_format=application%2Fxml%2Bfhir&amp;search-id=4d2d5176-b076-409c-9e2a-bd3e641179f7"/>
+   </link>
+   <entry>
+      <fullUrl value="https://wsgateway.prod.ehealthontario.ca/API/FHIR/Medications/v1/OperationOutcome"/>
+      <resource>
+         <OperationOutcome>
+            <meta>
+               <lastUpdated value="2020-11-24T09:40:00.448-05:00"/>
+            </meta>
+            <text>
+               <status value="generated"/>
+               <div xmlns="http://www.w3.org/1999/xhtml">&lt;p>Not found: Medication Dispenses matching search parameters&lt;/p></div>
+            </text>
+            <issue>
+               <severity value="information"/>
+               <code value="not-found"/>
+               <details>
+                  <text value="Not found: Medication Dispenses matching search parameters"/>
+               </details>
+            </issue>
+         </OperationOutcome>
+      </resource>
+   </entry>
+</Bundle>
