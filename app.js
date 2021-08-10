@@ -3,9 +3,9 @@ const https = require('https');
 const fileSystem = require('fs'); 
 const encode = require('nodejs-base64-encode');
 
-const ctrlPort = 81
-const mockPort = 80;
-const mockTlsPort = 443
+const ctrlPort = 8081
+const mockPort = 8080;
+const mockTlsPort = 8443
 
 //controller setup
 const ctrlApp     = express();
